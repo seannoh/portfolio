@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   /* So I can see where the elements are */
-  outline: black solid 1px;
+  /* outline: black solid 1px; */
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -45,15 +45,23 @@ main {
 .about-container {
   display: flex;
   align-items: center;
-  flex: 8;
+  justify-content: center;
+}
+
+.about-container p {
+  flex: 7;
 }
 
 figure {
+  flex: 3;
   margin: 3%;
+  display: flex;
+  justify-content: center;
 }
 
 figure img {
-  width: 200px;
+  width: 100%;
+  height: 50%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -83,6 +91,7 @@ nav ul li a {
   font-size: 14px;
   text-decoration: none;
   color: black;
+  transition: text-shadow 0.5s;
 }
 
 nav ul li a:hover{
@@ -128,9 +137,6 @@ h1 {
   padding-left: 5%;
 }
 
-.links li:hover {
-  text-shadow: 0 0 3px black;
-}
 
 .links {
   list-style: none;
@@ -140,6 +146,11 @@ h1 {
 
 .links li {
   margin: 0 5%;
+  transition: text-shadow 0.5s;
+}
+
+.links li:hover {
+  text-shadow: 0 0 3px black;
 }
 
 .links li a i{
