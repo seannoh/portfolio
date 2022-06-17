@@ -33,7 +33,7 @@ main {
 .container {
   border: 2px solid black;
   padding: 3%;
-  border-radius: 100px;
+  border-radius: 5vh;
   width: 60%;
   margin: 3%;
 }
@@ -46,12 +46,19 @@ nav {
 }
 
 nav ul{
-  text-align: right;
+  text-align: center;
   list-style: none;
 }
 
 nav ul li {
-  margin: 5%;
+  margin: 10%;
+}
+
+nav ul li a {
+  padding: 3%;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
 }
 
 nav ul li a i {
@@ -83,8 +90,14 @@ h1 {
 .technologies, .links {
   display: flex;
   justify-content: space-evenly;
-  max-width: 50%;
+  flex-wrap: wrap;
+  max-width: 75%;
   list-style: circle;
+  list-style-position: inside;
+}
+
+.technologies li{
+  padding-left: 5%;
 }
 
 .links {
