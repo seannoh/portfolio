@@ -1,12 +1,46 @@
 * {
   margin: 0;
   padding: 0;
+  /* So I can see where the elements are */
+  outline: black solid 1px;
+  box-sizing: border-box;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   font-size: 18px;
   font-family: "Roboto Mono", Helvetica, sans-serif;
   font-weight: 200;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  flex: 90;
+  flex-direction: column;
+}
+
+nav {
+  flex: 10;
+  position: sticky;
+  top: 15%;
+  height: min-content;
+}
+
+nav ul{
+  text-align: right;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 5%;
+}
+
+.hero-image {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
