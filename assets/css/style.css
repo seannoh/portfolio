@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   /* So I can see where the elements are */
-  outline: black solid 1px;
+  /* outline: black solid 1px; */
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -52,6 +52,12 @@ nav ul{
 
 nav ul li {
   margin: 5%;
+}
+
+nav ul li a i {
+  font-size: 150%;
+  color: black;
+  margin-top: 20%;
 }
 
 .hero-image {
