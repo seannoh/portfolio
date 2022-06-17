@@ -38,6 +38,11 @@ main {
   margin: 3%;
 }
 
+.container hr {
+  stroke-width: 1px;
+  border-top: 1px solid black;
+}
+
 .container h2 {
   margin-bottom: 1%;
 }
@@ -159,4 +164,19 @@ h1 {
   color: black;
 }
 
+footer {
+  margin: 1% 0;
+  text-align: center;
+  border-top: 1px dashed black;
+  padding-top: 1%;
+}
 
+footer p {
+  display: inline;
+}
+
+#copyright {
+  float: right;
+  position: relative;
+  right: 10vw;
+}
