@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   /* So I can see where the elements are */
-  /* outline: black solid 1px; */
+  outline: black solid 1px;
   box-sizing: border-box;
 }
 
@@ -58,9 +58,27 @@ h1 {
   margin: 3% 0;
 }
 
-.hero-text .technologies {
+.technologies, .links {
   display: flex;
   justify-content: space-evenly;
   max-width: 50%;
   list-style: circle;
 }
+
+.links {
+  list-style: none;
+  margin: 3% 0;
+  justify-content: flex-start;
+}
+
+.links li {
+  margin: 0 5%;
+}
+
+.links li a i{
+  list-style: none;
+  font-size: 200%;
+  color: black;
+}
+
+
