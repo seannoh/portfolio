@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   /* So I can see where the elements are */
-  outline: black solid 1px;
+  /* outline: black solid 1px; */
   box-sizing: border-box;
 }
 
@@ -43,4 +43,24 @@ nav ul li {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+h1 {
+  font-size: 400%;
+  margin-bottom: 3%;
+}
+
+.hero-text {
+  max-width: 60%;
+}
+
+.hero-text h2 {
+  margin: 3% 0;
+}
+
+.hero-text .technologies {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 50%;
+  list-style: circle;
 }
