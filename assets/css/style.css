@@ -38,6 +38,30 @@ main {
   margin: 3%;
 }
 
+.container h2 {
+  margin-bottom: 1%;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  flex: 8;
+}
+
+figure {
+  margin: 3%;
+}
+
+figure img {
+  width: 200px;
+}
+
+@media screen and (max-width: 1024px) {
+  .about-container {
+    flex-direction: column;
+  }
+}
+
 nav {
   flex: 10;
   position: sticky;
