@@ -4,6 +4,7 @@
   /* So I can see where the elements are */
   outline: black solid 1px;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -18,8 +19,23 @@ body {
 }
 
 main {
-  flex: 90;
   flex-direction: column;
+  flex: 90;
+}
+
+.containers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border: 2px solid black;
+  padding: 3%;
+  border-radius: 100px;
+  width: 60%;
+  margin: 3%;
 }
 
 nav {
