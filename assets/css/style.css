@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   /* So I can see where the elements are */
-  /* outline: black solid 1px; */
+  outline: black solid 1px;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -62,16 +62,44 @@ figure {
   margin: 3%;
   display: flex;
   justify-content: center;
+  max-height: 25vw;
+  max-width: 25vw;
 }
 
 figure img {
   width: 100%;
-  height: 50%;
+  border-radius: 5vh;
 }
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 50vmax;
+}
+
+.card {
+  width:45%;
+  height: 45%;
+  margin: 2%;
+  padding: 2%;
+  border-radius: 2vh;
+}
+
+
 
 @media screen and (max-width: 1024px) {
   .about-container {
     flex-direction: column;
+  }
+  .projects {
+    flex-direction: column;
+    height: fit-content;
+    
+  }
+  .card {
+    width: 94%;
+    min-height: 16vh;
   }
 }
 
