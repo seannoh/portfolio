@@ -1,11 +1,14 @@
+/* Selector for all elements */
 * {
   margin: 0;
   padding: 0;
   /* So I can see where the elements are */
-  outline: black solid 1px;
+  /* outline: black solid 1px; */
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+/* General element selectors */
 
 body {
   font-size: 18px;
@@ -13,16 +16,132 @@ body {
   font-weight: 200;
 }
 
-.wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
 main {
   flex-direction: column;
   flex: 90;
 }
 
+h1 {
+  font-size: 400%;
+  margin-bottom: 3%;
+}
+
+figure {
+  flex: 3;
+  margin: 3%;
+  display: flex;
+  justify-content: center;
+  max-height: 25vmin;
+  max-width: 25vmin;
+}
+
+figure img {
+  width: 100%;
+  border-radius: 5vmax;
+}
+
+nav {
+  flex: 10;
+  position: sticky;
+  top: 15%;
+  height: min-content;
+}
+
+nav ul{
+  text-align: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 10%;
+}
+
+nav ul li a {
+  padding: 3%;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  transition: text-shadow 0.5s;
+}
+
+nav ul li a:hover{
+  text-shadow: 0 0 5px black;
+}
+
+nav ul li a i {
+  font-size: 150%;
+  color: black;
+  margin-top: 20%;
+}
+
+footer {
+  margin: 1% 0;
+  text-align: center;
+  border-top: 1px dashed black;
+  padding-top: 1%;
+}
+
+footer p {
+  display: inline;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Selectors for hero section */
+.hero-image {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero-text {
+  max-width: 60%;
+}
+
+.hero-text h2 {
+  margin: 3% 0;
+}
+
+.technologies, .links {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  max-width: 75%;
+  list-style: circle;
+  list-style-position: inside;
+}
+
+.technologies li{
+  padding-left: 5%;
+}
+
+
+.links {
+  list-style: none;
+  margin: 3% 0;
+  justify-content: flex-start;
+}
+
+.links li {
+  margin: 0 5%;
+  transition: text-shadow 0.5s;
+}
+
+.links li:hover {
+  text-shadow: 0 0 3px black;
+}
+
+.links li a i{
+  list-style: none;
+  font-size: 200%;
+  color: black;
+}
+
+/* Selectors for main containers */
 .containers {
   display: flex;
   flex-direction: column;
@@ -55,20 +174,6 @@ main {
 
 .about-container p {
   flex: 7;
-}
-
-figure {
-  flex: 3;
-  margin: 3%;
-  display: flex;
-  justify-content: center;
-  max-height: 25vmin;
-  max-width: 25vmin;
-}
-
-figure img {
-  width: 100%;
-  border-radius: 5vmax;
 }
 
 .projects {
@@ -117,6 +222,13 @@ figure img {
   transform: scale(1.25);
 }
 
+#copyright {
+  float: right;
+  position: relative;
+  right: 10vw;
+}
+
+/* media queries for screen size */
 @media screen and (max-width: 1024px) {
   .about-container {
     flex-direction: column;
@@ -131,110 +243,4 @@ figure img {
   .big-card {
     min-height: 30vmax;
   }
-}
-
-nav {
-  flex: 10;
-  position: sticky;
-  top: 15%;
-  height: min-content;
-}
-
-nav ul{
-  text-align: center;
-  list-style: none;
-}
-
-nav ul li {
-  margin: 10%;
-}
-
-nav ul li a {
-  padding: 3%;
-  font-size: 14px;
-  text-decoration: none;
-  color: black;
-  transition: text-shadow 0.5s;
-}
-
-nav ul li a:hover{
-  text-shadow: 0 0 5px black;
-}
-
-nav ul li a i {
-  font-size: 150%;
-  color: black;
-  margin-top: 20%;
-}
-
-.hero-image {
-  height: 100vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-h1 {
-  font-size: 400%;
-  margin-bottom: 3%;
-}
-
-.hero-text {
-  max-width: 60%;
-}
-
-.hero-text h2 {
-  margin: 3% 0;
-}
-
-.technologies, .links {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  max-width: 75%;
-  list-style: circle;
-  list-style-position: inside;
-}
-
-.technologies li{
-  padding-left: 5%;
-}
-
-
-.links {
-  list-style: none;
-  margin: 3% 0;
-  justify-content: flex-start;
-}
-
-.links li {
-  margin: 0 5%;
-  transition: text-shadow 0.5s;
-}
-
-.links li:hover {
-  text-shadow: 0 0 3px black;
-}
-
-.links li a i{
-  list-style: none;
-  font-size: 200%;
-  color: black;
-}
-
-footer {
-  margin: 1% 0;
-  text-align: center;
-  border-top: 1px dashed black;
-  padding-top: 1%;
-}
-
-footer p {
-  display: inline;
-}
-
-#copyright {
-  float: right;
-  position: relative;
-  right: 10vw;
 }
