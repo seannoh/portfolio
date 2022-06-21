@@ -62,8 +62,8 @@ figure {
   margin: 3%;
   display: flex;
   justify-content: center;
-  max-height: 25vw;
-  max-width: 25vw;
+  max-height: 25vmin;
+  max-width: 25vmin;
 }
 
 figure img {
@@ -75,18 +75,32 @@ figure img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  height: 50vmax;
+  min-height: 50vmax;
 }
 
 .card {
-  width:45%;
-  height: 45%;
-  margin: 2%;
+  width: 44%;
+  min-height: 20vmax;
+  margin: 3%;
   padding: 2%;
-  border-radius: 2vh;
+  text-decoration: none;
+  color: black;
+  position: relative;
 }
 
+.card img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 2vh;
+  z-index: -1;
+}
 
+.big-card {
+  width: 100%;
+}
 
 @media screen and (max-width: 1024px) {
   .about-container {
@@ -94,12 +108,13 @@ figure img {
   }
   .projects {
     flex-direction: column;
-    height: fit-content;
-    
   }
   .card {
     width: 94%;
-    min-height: 16vh;
+    min-height: 15vmax;
+  }
+  .big-card {
+    min-height: 30vmax;
   }
 }
 
