@@ -33,7 +33,7 @@ main {
 .container {
   border: 1px solid black;
   padding: 3%;
-  border-radius: 5vh;
+  border-radius: 5vmin;
   width: 60%;
   margin: 3%;
 }
@@ -68,7 +68,7 @@ figure {
 
 figure img {
   width: 100%;
-  border-radius: 5vh;
+  border-radius: 5vmax;
 }
 
 .projects {
@@ -85,19 +85,28 @@ figure img {
   padding: 4%;
   text-decoration: none;
   color: black;
-  border-radius: 5vh;
+  border-radius: 5vmin;
   position: relative;
   overflow: hidden;
 }
 
 .card img {
   position: absolute;
-  height: 100%;
+  height: auto;
   width: 100%;
   left: 0;
   top: 0;
+  filter: blur(1px);
   z-index: -1;
   transition: transform  0.5s;
+}
+
+.card h3, p {
+  background-color: white;
+  margin-bottom: 1%;
+  padding: 0.2em;
+  border-radius: 1vmax;
+  width: fit-content;
 }
 
 .big-card {
