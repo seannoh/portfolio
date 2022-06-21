@@ -82,10 +82,12 @@ figure img {
   width: 44%;
   min-height: 20vmax;
   margin: 3%;
-  padding: 2%;
+  padding: 4%;
   text-decoration: none;
   color: black;
+  border-radius: 5vh;
   position: relative;
+  overflow: hidden;
 }
 
 .card img {
@@ -94,12 +96,16 @@ figure img {
   width: 100%;
   left: 0;
   top: 0;
-  border-radius: 2vh;
   z-index: -1;
+  transition: transform  0.5s;
 }
 
 .big-card {
   width: 100%;
+}
+
+.card:hover img {
+  transform: scale(1.25);
 }
 
 @media screen and (max-width: 1024px) {
